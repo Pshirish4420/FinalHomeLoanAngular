@@ -30,6 +30,7 @@ export const ROUTES: RouteInfo[] = [
 export class SidebarComponent implements OnInit {
     public menuItems: any[];
     role: string;
+    
     constructor() {}
   
     ngOnInit() {
