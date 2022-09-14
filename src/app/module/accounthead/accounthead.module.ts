@@ -1,10 +1,12 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { ApprovedListComponent } from './approved-list/approved-list.component';
+import { EmiCalculatorComponent } from './emi-calculator/emi-calculator.component';
 
 
 
 @NgModule({
-  declarations: [],
+  declarations: [ApprovedListComponent, EmiCalculatorComponent],
   imports: [
     CommonModule
   ]
