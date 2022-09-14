@@ -26,10 +26,11 @@ export class LoginComponent implements OnInit {
     console.log("login called");
     console.log(u.username,u.password);
     
+   
     if (u.username === 'ad' && u.password === 'ad') {
       console.log('in admin');
-      sessionStorage.setItem('role', 'admin');
-      this.router.navigateByUrl("role/admin/adminbash");
+      sessionStorage.setItem('role', 'apnaloan');
+      this.router.navigateByUrl("role/apnaloan/apnalist");
     }
     if (u.username === 'emp' && u.password === 'emp') {
       console.log('in emp');

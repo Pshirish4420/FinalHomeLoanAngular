@@ -1,14 +1,17 @@
-import { MastermoduleModule } from './module/mastermodule/mastermodule.module';
+
 import { Routes } from '@angular/router';
 
 import { AdminLayoutComponent } from './layouts/admin-layout/admin-layout.component';
 import { LoginComponent } from './login/login.component';
-import { EmployeeModule } from './module/employee/employee.module';
 import { HomeComponent } from './home/home.component';
 import { OperationexecutiveModule } from './module/operationexecutive/operationexecutive.module';
 import { CreditmanagerModule } from './module/creditmanager/creditmanager.module';
-import { RelationexecutiveModule } from './module/relationexecutive/relationexecutive.module';
-import { AbcModule } from './module/abc/abc.module';
+
+import { ApnaloanModule } from './module/apnaloan/apnaloan.module';
+import { AccountheadModule } from './module/accounthead/accounthead.module';
+import { DocumentVerificationOfficerModule } from './module/document-verification-officer/document-verification-officer.module';
+import { SalsesexecutiveModule } from './module/salsesexecutive/salsesexecutive.module';
+import { LedgerModule } from './module/ledger/ledger.module';
 
 
 export const AppRoutes: Routes = [
@@ -24,12 +27,14 @@ export const AppRoutes: Routes = [
     path: 'role',
     component: AdminLayoutComponent,
     children: [
-      {path: 'admin', loadChildren: () => MastermoduleModule},
-      {path: 'emp', loadChildren: () => EmployeeModule},
+      {path: 'accounthead', loadChildren: () =>AccountheadModule },
+      {path: 'dvofficer', loadChildren: () => DocumentVerificationOfficerModule},
       {path:'operation',loadChildren:()=>OperationexecutiveModule},
       {path:'cr',loadChildren:()=>CreditmanagerModule},
-      {path:'relation',loadChildren:()=>RelationexecutiveModule},
-      {path:'ab',loadChildren:()=>AbcModule}
+      {path:'selsexcutive',loadChildren:()=>SalsesexecutiveModule},
+      {path:'ledger',loadChildren:()=>LedgerModule},
+      {path:'apnaloan',loadChildren:()=>ApnaloanModule}
+
     ]
   },
   {
