@@ -1,19 +1,23 @@
 .login-block {
 	background: #DE6262;
 	/* fallback for old browsers */
-	background: -webkit-linear-gradient(to bottom, #8eb4b9, #57f5ed);
+	background: -webkit-linear-gradient(to bottom, #8eb4b9, #01040e);
 	/* Chrome 10-25, Safari 5.1-6 */
-	background: linear-gradient(to bottom, #5fc1ce, #57a1f5);
+	background: linear-gradient(to bottom, #000102, #000000);
 	/* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 	float: left;
+	background-size: cover;
 	width: 100%;
 	padding: 50px 0;
 }
-
+.img{
+	height: 100ch;
+	width: 300ch;
+}
 .banner-sec {
-	background: url(https://static.pexels.com/photos/33972/pexels-photo.jpg) no-repeat left bottom;
-	background-size: cover;
-	min-height: 500px;
+	/* background: url(https://www.sagatraining.ca/wp-content/uploads/2018/10/background-images-for-login-form-8.jpg) no-repeat left bottom; */
+	/* background-size: auto; */
+	min-height: 100px;
 	border-radius: 0 10px 10px 0;
 	padding: 0;
 }
@@ -80,17 +84,17 @@
 }
 
 .banner-text {
-	width: 70%;
+	width: 100%;
 	position: absolute;
 	bottom: 40px;
 	padding-left: 20px;
 }
-
+/* 
 .banner-text h2 {
 	color: #fff;
 	font-weight: 600;
-}
-
+} */
+/* 
 .banner-text h2:after {
 	content: " ";
 	width: 100px;
@@ -99,7 +103,7 @@
 	display: block;
 	margin-top: 20px;
 	border-radius: 3px;
-}
+} */
 
 .banner-text p {
 	color: #fff;

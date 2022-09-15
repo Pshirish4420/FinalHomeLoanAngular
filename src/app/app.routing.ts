@@ -13,6 +13,9 @@ import { DocumentVerificationOfficerModule } from './module/document-verificatio
 import { SalsesexecutiveModule } from './module/salsesexecutive/salsesexecutive.module';
 import { LedgerModule } from './module/ledger/ledger.module';
 import { EmployeeModule } from './module/employee/employee.module';
+import { EmiCalculatorComponent } from './module/accounthead/emi-calculator/emi-calculator.component';
+import { LoandetailsComponent } from './loandetails/loandetails.component';
+import { ContactusComponent } from './contactus/contactus.component';
 
 
 export const AppRoutes: Routes = [
@@ -40,6 +43,15 @@ export const AppRoutes: Routes = [
  
 
     ]
+  },
+  {
+    path:'emical' , component :EmiCalculatorComponent
+  },
+  {
+    path:'loanDetails' , component : LoandetailsComponent
+  },
+  {
+    path:'contactus' , component :ContactusComponent
   },
   {
     path: '**',

@@ -18,11 +18,14 @@ import { AdminLayoutComponent } from './layouts/admin-layout/admin-layout.compon
 import { LoginComponent } from './login/login.component';
 import { HttpClientModule } from '@angular/common/http';
 import { HomeComponent } from './home/home.component';
+import { AboutusComponent } from './aboutus/aboutus.component';
+import { ContactusComponent } from './contactus/contactus.component';
+import { LoandetailsComponent } from './loandetails/loandetails.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    AdminLayoutComponent,LoginComponent, HomeComponent
+    AdminLayoutComponent,LoginComponent, HomeComponent, AboutusComponent, ContactusComponent, LoandetailsComponent
   ],
   imports: [
     BrowserAnimationsModule,HttpClientModule,

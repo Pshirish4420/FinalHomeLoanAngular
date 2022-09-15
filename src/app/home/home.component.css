@@ -40,9 +40,9 @@
 .wrapper .top_nav .left .logo p{
   font-size: 28px;
   font-weight: bold;
-  color: navy;
-  font-family: sans-serif;
-  font-style: oblique;
+  color: rgb(19, 4, 176);
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-style: italic;
   margin-right: 7%;
   padding-bottom: 2%;
   width: max-content;
@@ -96,7 +96,7 @@
 .wrapper .top_nav .right1 ul li p:hover{
   
   padding-top: 1%;
-  color:darkcyan;
+  color:rgb(247, 251, 251);
   
 }
 
@@ -119,7 +119,7 @@
   display: flex;
   height: 60px;
   width: 100%;
-  background: #001846;
+  background: #000000;
   align-items: center;
   justify-content: space-between;
   padding: 0 0px 0 0px;
@@ -162,7 +162,7 @@
 .nav ul li.active,
 .nav ul li:hover{
  
-  background: rgb(82, 235, 255);
+  background: rgba(115, 44, 44, 0.021);
 }
 
 .nav .menu-btn i{
@@ -335,7 +335,7 @@ input[type="checkbox"]{
   bottom: 40px;
   left: 20px;
   background-color: rgba(0, 0, 0, 0.658);
-  color: white;
+  color: rgb(33, 24, 24);
   padding-left: 20px;
   padding-right: 20px;
   font-family: 'Times New Roman', Times, serif;
