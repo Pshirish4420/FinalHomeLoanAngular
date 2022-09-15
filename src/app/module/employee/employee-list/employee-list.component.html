@@ -2,13 +2,22 @@
 <div class="container">
     <table class="table table-striped">
       <tbody>
-        <th>Eid</th>
+        <th>E-id</th>
         <th>E-NAME</th>
-        <TH>E-Address</TH>
+        <TH>E-USERNAME</TH>
+        <TH>E-PASSWORD</TH>
+        <TH>E-DESIGNATION</TH>
+        <TH>E-MOBILENO</TH>
+        <TH>E-EMAILID</TH>
+        
         <tr *ngFor="let e of emplist">
-          <td>{{e.id}}</td>
-          <td>{{e.ename}}</td>
-          <td>{{e.address}}</td>
+          <td>{{e.employeeid}}</td>
+          <td>{{e.employeename}}</td>
+          <td>{{e.employeeusername}}</td>
+          <td>{{e.employeepassword}}</td>
+          <td>{{e.employeedesignation}}</td>
+          <td>{{e.employeemobile}}</td>
+          <td>{{e.employeeemailid}}</td>
           <td><a class="btn" (click)="editData(e)">
               <i class="fa fa-edit"></i>
             </a>

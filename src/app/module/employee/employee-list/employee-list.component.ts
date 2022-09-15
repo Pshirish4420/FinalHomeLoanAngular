@@ -18,7 +18,7 @@ export class EmployeeListComponent implements OnInit {
   }
    deleteData(id:number){
       this.cs.DeleteEmpData(id).subscribe();
-       window.location.reload();
+       //window.location.reload();
    } 
   
    editData(e:employee){

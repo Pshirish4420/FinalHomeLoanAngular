@@ -55,8 +55,8 @@ export class LoginComponent implements OnInit {
     }
     if (u.username === 're' && u.password === 're') {
       console.log(u.username,u.password);
-      sessionStorage.setItem('role', 'relation');
-      this.router.navigateByUrl("role/relation/oecustomer");
+      sessionStorage.setItem('role', 'selsexcutive');
+      this.router.navigateByUrl("role/selsexcutive/all-app-list");
     }
     if (u.username === 'abc' && u.password === 'abc') {
       console.log(u.username,u.password);

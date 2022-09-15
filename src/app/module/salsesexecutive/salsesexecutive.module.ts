@@ -6,9 +6,12 @@ import { EnquiryFormComponent } from './enquiry-form/enquiry-form.component';
 import { RouterModule, Routes } from '@angular/router';
 
 const serouting: Routes = [
-  {path: 'all-app-list',component:AllApplicationListComponent  },
+  {path:'all-app-list',component:AllApplicationListComponent  },
   {
     path:'all-approved-list',component:AllApprovedListComponent
+  },
+  {
+    path:'enquiry-form',component:EnquiryFormComponent
   }
  
   
