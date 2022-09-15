@@ -17,9 +17,9 @@ export class Menu {
       
     ],
     selsexcutive:[
-        {path: "oeenquiry", title:"ENQUERY", icon: "pe-7s-graph", class: "" },
-        {path: "oecustomer", title:"REGISTER CUSTOMER", icon: "pe-7s-graph", class: "" },
-        {path: "oedocument", title:"UPLOAD DOCUMENT", icon: "pe-7s-graph", class: "" }
+        {path: "all-app-list", title:"ALL-APPLICATION", icon: "pe-7s-graph", class: "" },
+        {path: "all-approved-list", title:"ALL-APPROVED", icon: "pe-7s-graph", class: "" },
+        {path: "enquiry-form", title:"NEW-APPLICATION", icon: "pe-7s-graph", class: "" }
 
       ],
       cr:[{path: "credit", title:"APPROVE-LIST", icon: "pe-7s-graph", class: "" },
