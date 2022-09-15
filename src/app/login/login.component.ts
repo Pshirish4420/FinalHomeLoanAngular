@@ -1,11 +1,12 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
-export interface user {
-  username: string;
-  password: string;
-  repassword: string;
-  email: string;
-}
+import { CommonService } from 'app/module/shared/common.service';
+  export interface user {
+    username: string;
+    password: string;
+    repassword: string;
+    email: string;
+  }
 @Component({
   selector: 'app-login',
   templateUrl: './login.component.html',
@@ -18,7 +19,10 @@ export class LoginComponent implements OnInit {
     repassword: "",
     email: ""
   };
-  constructor(private router: Router) {}
+
+  image:string="/assets/img/mike.jpg"
+  imagecm:string="/assets/img/agri1.jpg"
+  constructor(private router: Router, public cs : CommonService) {}
   username: string='';
   password:string='';
   ngOnInit() {}
@@ -32,18 +36,20 @@ export class LoginComponent implements OnInit {
       sessionStorage.setItem('role', 'apnaloan');
       this.router.navigateByUrl("role/apnaloan/apnalist");
     }
-    if (u.username === 'emp' && u.password === 'emp') {
-      console.log('in emp');
-      sessionStorage.setItem('role', 'emp');
-      this.router.navigateByUrl("role/emp/empdash");
+    if (u.username === 'dvo' && u.password === 'dvo') {
+      console.log('in oe');
+      this.cs.setimage(this.image)
+      sessionStorage.setItem('role', 'dvofficer');
+      this.router.navigateByUrl("role/dvofficer/approved-app");
     }
     if (u.username === 'oe' && u.password === 'oe') {
      
       sessionStorage.setItem('role', 'operation');
-      this.router.navigateByUrl("role/operation/oedash");
+      this.router.navigateByUrl("role/operation/allaplist");
     }
     if (u.username === 'cm' && u.password === 'cm') {
       console.log(u.username,u.password);
+      this.cs.setimage(this.imagecm)
       sessionStorage.setItem('role', 'cr');
       this.router.navigateByUrl("role/cr/credit");
     }
@@ -54,8 +60,13 @@ export class LoginComponent implements OnInit {
     }
     if (u.username === 'abc' && u.password === 'abc') {
       console.log(u.username,u.password);
-      sessionStorage.setItem('role', 'ab');
-      this.router.navigateByUrl("role/ab/abcdash");
+      sessionStorage.setItem('role', 'accounthead');
+      this.router.navigateByUrl("role/accounthead/approvedlist");
+    }
+    if (u.username === 'emp' && u.password === 'emp') {
+      console.log(u.username,u.password);
+      sessionStorage.setItem('role', 'employee');
+      this.router.navigateByUrl("role/employee/add-emp");
     }
     
   }

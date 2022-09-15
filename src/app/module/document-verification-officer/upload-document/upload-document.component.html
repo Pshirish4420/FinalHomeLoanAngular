@@ -1,0 +1,38 @@
+
+<div>
+    <form  [formGroup]="formDoc"  (ngSubmit)="saveDoc()">
+   <div *ngIf="[state]==1">
+   ADDRESS-PROOF   &nbsp;&nbsp;<input type="file" (change)="onselectaddressProof($event)"><br><br>
+   <img [src]="imageSrc1" height="50">
+      
+   PANCARD   &nbsp;&nbsp;<input type="file" (change)="onselectpancard($event)"><br><br>
+   <img [src]="imageSrc2" height="50">
+
+    AADHARCARD   &nbsp;&nbsp;<input type="file" (change)="onselectaadharcard($event)"><br><br>
+      <img [src]="imageSrc3" height="50">
+    
+      SIGNATURE &nbsp;&nbsp;<input type="file" (change)="onselectsignature($event)"><br><br>
+      <img [src]="imageSrc4" height="50">
+
+      <button  (click)="onnext()"  >next</button>
+    </div>
+    
+    <div *ngIf="[state]==2">
+      PHOTO   &nbsp;&nbsp;<input type="file" (change)="onselectphoto($event)"><br><br>
+      <img [src]="imageSrc5" height="50">
+
+      INCOMETAX &nbsp;&nbsp;<input type="file" (change)="onselectincometax($event)"><br><br>
+      <img [src]="imageSrc6" height="50">
+       
+      SALARY-SLIP &nbsp;&nbsp;<input type="file" (change)="onselectsalaryslip($event)"><br><br>
+      <img [src]="imageSrc7" height="50">
+      
+      BANKCHECK &nbsp;&nbsp;<input type="file" (change)="onselectbankcheck($event)"><br><br>
+      <img [src]="imageSrc8" height="50">
+
+   <button type="submit">AddDocument</button><br><br>
+  </div>
+
+
+    </form>
+    

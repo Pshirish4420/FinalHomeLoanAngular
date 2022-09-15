@@ -2,20 +2,15 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 import { RouterModule, Routes } from '@angular/router';
-import { ViewequiryComponent } from './viewequiry/viewequiry.component';
-
-import { CibilscoreComponent } from './cibilscore/cibilscore.component';
-
+import { AllApprovedListComponent } from './all-approved-list/all-approved-list.component';
 
 const oerouting: Routes = [
-  // {path: 'oedash', component: DashboardComponent},
-  {path:'oeenq',component:ViewequiryComponent},
   
-  {path:'cibil',component:CibilscoreComponent}
+  {path:'allaplist',component:AllApprovedListComponent},
   
 ];
 @NgModule({
-  declarations: [ ViewequiryComponent, CibilscoreComponent],
+  declarations: [ AllApprovedListComponent],
   imports: [
     CommonModule,RouterModule.forChild(oerouting)
   ]

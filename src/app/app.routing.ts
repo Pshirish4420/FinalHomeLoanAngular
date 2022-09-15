@@ -12,6 +12,7 @@ import { AccountheadModule } from './module/accounthead/accounthead.module';
 import { DocumentVerificationOfficerModule } from './module/document-verification-officer/document-verification-officer.module';
 import { SalsesexecutiveModule } from './module/salsesexecutive/salsesexecutive.module';
 import { LedgerModule } from './module/ledger/ledger.module';
+import { EmployeeModule } from './module/employee/employee.module';
 
 
 export const AppRoutes: Routes = [
@@ -33,7 +34,10 @@ export const AppRoutes: Routes = [
       {path:'cr',loadChildren:()=>CreditmanagerModule},
       {path:'selsexcutive',loadChildren:()=>SalsesexecutiveModule},
       {path:'ledger',loadChildren:()=>LedgerModule},
-      {path:'apnaloan',loadChildren:()=>ApnaloanModule}
+      {path:'apnaloan',loadChildren:()=>ApnaloanModule},
+      {path:'employee',loadChildren:()=>EmployeeModule}
+
+ 
 
     ]
   },

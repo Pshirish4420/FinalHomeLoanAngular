@@ -1,0 +1,24 @@
+<p>employee-list works!</p>
+<div class="container">
+    <table class="table table-striped">
+      <tbody>
+        <th>Eid</th>
+        <th>E-NAME</th>
+        <TH>E-Address</TH>
+        <tr *ngFor="let e of emplist">
+          <td>{{e.id}}</td>
+          <td>{{e.ename}}</td>
+          <td>{{e.address}}</td>
+          <td><a class="btn" (click)="editData(e)">
+              <i class="fa fa-edit"></i>
+            </a>
+          </td>
+          <td><a class="btn" (click)="deleteData(e.id)">
+              <i class="fa fa-trash"></i>
+            </a>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+

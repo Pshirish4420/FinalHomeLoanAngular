@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Menu } from 'app/model/menu';
+import { CommonService } from 'app/module/shared/common.service';
 
 
 export interface RouteInfo {
@@ -31,7 +32,7 @@ export class SidebarComponent implements OnInit {
     public menuItems: any[];
     role: string;
     
-    constructor() {}
+    constructor(public cs : CommonService) {}
   
     ngOnInit() {
        this.menuItems = ROUTES.filter(menuItem => menuItem);
@@ -39,5 +40,11 @@ export class SidebarComponent implements OnInit {
       console.log(this.menuItems);
       this.role = sessionStorage.getItem("role");
       console.log(this.role);
+      this.image=this.cs.img
     }
+
+    image:string="/assets/img/pass_size.jpg"
+
+    count:number=0;
+
 }
