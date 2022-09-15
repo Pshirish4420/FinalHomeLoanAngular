@@ -42,12 +42,15 @@ export class CommonService {
     return this.http.post(this.url,d)
   }
 
-img:string="/assets/img/pass_size.jpg";
+img:string="/assets/img/raju.jpg";
 
 setimage(image :string)
 {
 this.img=image;
 }
+
+
+
 
 saveEmpData(e){
   return this.http.post(this.postEmpurl,e)
