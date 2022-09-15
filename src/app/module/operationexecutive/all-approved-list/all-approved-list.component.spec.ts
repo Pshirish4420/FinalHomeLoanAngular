@@ -1,20 +1,20 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { CibilscoreComponent } from './cibilscore.component';
+import { AllApprovedListComponent } from './all-approved-list.component';
 
-describe('CibilscoreComponent', () => {
-  let component: CibilscoreComponent;
-  let fixture: ComponentFixture<CibilscoreComponent>;
+describe('AllApprovedListComponent', () => {
+  let component: AllApprovedListComponent;
+  let fixture: ComponentFixture<AllApprovedListComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ CibilscoreComponent ]
+      declarations: [ AllApprovedListComponent ]
     })
     .compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(CibilscoreComponent);
+    fixture = TestBed.createComponent(AllApprovedListComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
