@@ -12,4 +12,7 @@ export class AllApprovedListComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  getcibil(){
+    
+  }
 }
