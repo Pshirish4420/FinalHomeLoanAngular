@@ -4,6 +4,7 @@ import { HttpClient } from '@angular/common/http';
 import { employee } from '../employee/add-employee/add-employee.component';
 import { Observable } from 'rxjs';
 <<<<<<< HEAD
+<<<<<<< HEAD
 import { Cibil } from 'app/model/cibil';
 import { Customer } from 'app/model/Customer';
 export interface Applicant {
@@ -23,6 +24,8 @@ export interface Applicant {
 import { Applicant } from 'app/model/applicant';
 import { Cibil } from 'app/model/cibil';
 >>>>>>> 575d390c195f3abd316cd0467b1634ea256dbfa7
+=======
+>>>>>>> c5bbeffc94fee9c7dca3df0f0166a47d50510626
 
 
 
@@ -43,6 +46,7 @@ export class CommonService {
 
   UpdateEmpurl:string="http://localhost:7777/Employee/"
 <<<<<<< HEAD
+<<<<<<< HEAD
 
   getApplicanturl:string="http://localhost:7777/getApplicants/"
 
@@ -53,6 +57,8 @@ export class CommonService {
 =======
   suapplicanturl:string="http://localhost:7777/saveApplicant/"
 >>>>>>> 575d390c195f3abd316cd0467b1634ea256dbfa7
+=======
+>>>>>>> c5bbeffc94fee9c7dca3df0f0166a47d50510626
   emplist:employee[];
   constructor(public http:HttpClient) { }
   
@@ -67,6 +73,7 @@ export class CommonService {
     employeeemailid: "",
     
   };
+<<<<<<< HEAD
   c:Customer={
     customerid:0,
 customer_age: "",
@@ -181,21 +188,31 @@ c:Cibil={
 }
 
 >>>>>>> 575d390c195f3abd316cd0467b1634ea256dbfa7
+=======
+
+>>>>>>> c5bbeffc94fee9c7dca3df0f0166a47d50510626
 
   savedocument(d){
     return this.http.post(this.url,d)
   }
 
+<<<<<<< HEAD
 img:string="/assets/img/raju.jpg";
+=======
+img:string="/assets/img/pass_size.jpg";
+>>>>>>> c5bbeffc94fee9c7dca3df0f0166a47d50510626
 
 setimage(image :string)
 {
 this.img=image;
 }
 
+<<<<<<< HEAD
 
 
 
+=======
+>>>>>>> c5bbeffc94fee9c7dca3df0f0166a47d50510626
 saveEmpData(e){
   return this.http.post(this.postEmpurl,e)
 }
@@ -213,6 +230,7 @@ updateEmpData(e:employee){
   return this.http.put(this.UpdateEmpurl+e.employeeid,e)
 }
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 getApplicantData():Observable<Applicant>{
 
@@ -242,5 +260,7 @@ saveApplicant(a:Applicant)
 return this.http.post(this.suapplicanturl,a)
 }
 >>>>>>> 575d390c195f3abd316cd0467b1634ea256dbfa7
+=======
+>>>>>>> c5bbeffc94fee9c7dca3df0f0166a47d50510626
 }
 

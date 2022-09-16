@@ -1,6 +1,9 @@
 import { Component, OnInit } from '@angular/core';
+<<<<<<< HEAD
 import { Applicant } from 'app/model/applicant';
 import { CommonService } from 'app/module/shared/common.service';
+=======
+>>>>>>> c5bbeffc94fee9c7dca3df0f0166a47d50510626
 
 @Component({
   selector: 'app-all-approved-list',
@@ -8,6 +11,7 @@ import { CommonService } from 'app/module/shared/common.service';
   styleUrls: ['./all-approved-list.component.css']
 })
 export class AllApprovedListComponent implements OnInit {
+<<<<<<< HEAD
   applicantid:number;
   fc:any;
   constructor(public cs:CommonService) { }
@@ -56,4 +60,12 @@ export class AllApprovedListComponent implements OnInit {
 
     this.cs.saveCibil(fc,a)
   }
+=======
+
+  constructor() { }
+
+  ngOnInit(): void {
+  }
+
+>>>>>>> c5bbeffc94fee9c7dca3df0f0166a47d50510626
 }

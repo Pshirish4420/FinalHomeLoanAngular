@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import { documents } from "app/module/document-verification-officer/upload-document/upload-document.component";
 import { AccountDetails } from "./account-details";
 import { Applicant } from "./applicant";
@@ -20,6 +21,16 @@ export class Customer {
   document:documents;
   profession:ProfessionDetails;
   loanDetails:LoanDetails;
+=======
+
+export class Customer {
+  studentId: number;
+  firstName: String;
+  lastName: String;
+  mobNo: String;
+  studentEmail: String;
+  studentEvent: String;
+>>>>>>> c5bbeffc94fee9c7dca3df0f0166a47d50510626
   }
 
 

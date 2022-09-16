@@ -1,6 +1,9 @@
 import { Component, OnInit } from '@angular/core';
+<<<<<<< HEAD
 import { Customer } from 'app/model/Customer';
 import { CommonService } from 'app/module/shared/common.service';
+=======
+>>>>>>> c5bbeffc94fee9c7dca3df0f0166a47d50510626
 
 @Component({
   selector: 'app-enquiry-form',
@@ -9,6 +12,7 @@ import { CommonService } from 'app/module/shared/common.service';
 })
 export class EnquiryFormComponent implements OnInit {
 
+<<<<<<< HEAD
   constructor(public cs:CommonService) { }
 
 
@@ -19,5 +23,11 @@ export class EnquiryFormComponent implements OnInit {
  this.cs.
   }
 
+=======
+  constructor() { }
+
+  ngOnInit(): void {
+  }
+>>>>>>> c5bbeffc94fee9c7dca3df0f0166a47d50510626
 
 }
