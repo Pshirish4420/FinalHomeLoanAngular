@@ -3,6 +3,8 @@ import { documents } from '../document-verification-officer/upload-document/uplo
 import { HttpClient } from '@angular/common/http';
 import { employee } from '../employee/add-employee/add-employee.component';
 import { Observable } from 'rxjs';
+import { Applicant } from 'app/model/applicant';
+import { Cibil } from 'app/model/cibil';
 
 
 
@@ -22,6 +24,7 @@ export class CommonService {
   DeleteEmpurl:string="http://localhost:7777/Employee/"
 
   UpdateEmpurl:string="http://localhost:7777/Employee/"
+  suapplicanturl:string="http://localhost:7777/saveApplicant/"
   emplist:employee[];
   constructor(public http:HttpClient) { }
   
@@ -36,6 +39,29 @@ export class CommonService {
     employeeemailid: "",
     
   };
+
+  app:Applicant=
+{
+  "applicantid":0,
+  "applicant_name": '',
+  "applicant_occupation": '',
+  "applicant_pancard": '',
+  "applicant_email": '',
+  "cibil": {
+    "cibilId": 0,
+    "cibilScoreDateTime": '',
+    "cibilStatus": '',
+    "cibilRemark": '',
+    "cibilScore": 0
+  }
+}
+c:Cibil={
+  cibilId: 0,
+  cibilScoreDateTime: '',
+  cibilStatus: '',
+  cibilRemark: '',
+  cibilScore: 0
+}
 
 
   savedocument(d){
@@ -69,5 +95,10 @@ updateEmpData(e:employee){
   return this.http.put(this.UpdateEmpurl+e.employeeid,e)
 }
 
+
+saveApplicant(a:Applicant)
+{
+return this.http.post(this.suapplicanturl,a)
+}
 }
 

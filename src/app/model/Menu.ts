@@ -19,7 +19,9 @@ export class Menu {
     selsexcutive:[
         {path: "all-app-list", title:"ALL-APPLICATION", icon: "pe-7s-graph", class: "" },
         {path: "all-approved-list", title:"ALL-APPROVED", icon: "pe-7s-graph", class: "" },
-        {path: "enquiry-form", title:"NEW-APPLICATION", icon: "pe-7s-graph", class: "" }
+        {path: "new-loan-form", title:"NEW-APPLICATION", icon: "pe-7s-graph", class: "" },
+        {path:"new-enquiry-form", title:"NEW_ENQUIRY", icon: "pe-7s-graph", class: "" }
+        
 
       ],
       cr:[{path: "credit", title:"APPROVE-LIST", icon: "pe-7s-graph", class: "" },
