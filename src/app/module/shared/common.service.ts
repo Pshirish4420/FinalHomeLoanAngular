@@ -106,14 +106,14 @@ accountDetails:{
   account_holdername:"",
   ifsc_code:"",
 },
-propertyDetails:{
+// propertyDetails:{
 
-  propertyID:0,
-  property_type:"",
-  property_area:"",
-  property_price:"",
-  property_address:"",
-},
+//   propertyID:0,
+//   property_type:"",
+//   property_area:"",
+//   property_price:"",
+//   property_address:"",
+// },
 document:{
   documentId:0,
   addressProof: [],
