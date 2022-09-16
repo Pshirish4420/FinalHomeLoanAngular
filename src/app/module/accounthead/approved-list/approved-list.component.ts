@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { CommonService } from 'app/module/shared/common.service';
 
 @Component({
   selector: 'app-approved-list',
@@ -7,9 +8,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ApprovedListComponent implements OnInit {
 
-  constructor() { }
+  retriveDoc:any;
+  // retriveCibil:any
+  retriveApp:any;
+
+  constructor(public cs:CommonService) { }
 
   ngOnInit(): void {
-  }
-
+    this.cs.getAllCust().subscribe(d=>{
+      this.retriveDoc=d;
+     })
+    }
 }

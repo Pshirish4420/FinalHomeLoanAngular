@@ -22,6 +22,10 @@ export class LoginComponent implements OnInit {
 
   image:string="/assets/img/mike.jpg"
   imagecm:string="/assets/img/agri1.jpg"
+  image1:string="/assets/img/raju.jpg"
+
+
+  
   constructor(private router: Router, public cs : CommonService) {}
   username: string='';
   password:string='';
@@ -33,8 +37,8 @@ export class LoginComponent implements OnInit {
    
     if (u.username === 'ad' && u.password === 'ad') {
       console.log('in admin');
-      sessionStorage.setItem('role', 'apnaloan');
-      this.router.navigateByUrl("role/apnaloan/apnalist");
+      sessionStorage.setItem('role', 'accounthead');
+      this.router.navigateByUrl("role/accounthead/approvedlist");
     }
     if (u.username === 'dvo' && u.password === 'dvo') {
       console.log('in oe');
@@ -43,7 +47,7 @@ export class LoginComponent implements OnInit {
       this.router.navigateByUrl("role/dvofficer/approved-app");
     }
     if (u.username === 'oe' && u.password === 'oe') {
-     
+      console.log('in oe');
       sessionStorage.setItem('role', 'operation');
       this.router.navigateByUrl("role/operation/allaplist");
     }
@@ -53,8 +57,9 @@ export class LoginComponent implements OnInit {
       sessionStorage.setItem('role', 'cr');
       this.router.navigateByUrl("role/cr/credit");
     }
-    if (u.username === 're' && u.password === 're') {
+    if (u.username === 'se' && u.password === 'se') {
       console.log(u.username,u.password);
+      this.cs.setimage(this.image1)
       sessionStorage.setItem('role', 'selsexcutive');
       this.router.navigateByUrl("role/selsexcutive/all-app-list");
     }
