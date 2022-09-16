@@ -3,6 +3,7 @@ import { documents } from '../document-verification-officer/upload-document/uplo
 import { HttpClient } from '@angular/common/http';
 import { employee } from '../employee/add-employee/add-employee.component';
 import { Observable } from 'rxjs';
+<<<<<<< HEAD
 import { Cibil } from 'app/model/cibil';
 import { Customer } from 'app/model/Customer';
 export interface Applicant {
@@ -18,6 +19,10 @@ export interface Applicant {
     cibilRemark:string;
   }
 }
+=======
+import { Applicant } from 'app/model/applicant';
+import { Cibil } from 'app/model/cibil';
+>>>>>>> 575d390c195f3abd316cd0467b1634ea256dbfa7
 
 
 
@@ -37,6 +42,7 @@ export class CommonService {
   DeleteEmpurl:string="http://localhost:7777/Employee/"
 
   UpdateEmpurl:string="http://localhost:7777/Employee/"
+<<<<<<< HEAD
 
   getApplicanturl:string="http://localhost:7777/getApplicants/"
 
@@ -44,6 +50,9 @@ export class CommonService {
 
   saveCibilurl:string="http://localhost:7777/saveCibil/"
 
+=======
+  suapplicanturl:string="http://localhost:7777/saveApplicant/"
+>>>>>>> 575d390c195f3abd316cd0467b1634ea256dbfa7
   emplist:employee[];
   constructor(public http:HttpClient) { }
   
@@ -82,6 +91,7 @@ applicant:{
     
   }
 
+<<<<<<< HEAD
 },
 accountDetails:{
   accountId:0,
@@ -146,17 +156,45 @@ loanDetails:{
   //   cibilRemark:"",
     
   // }}
+=======
+  app:Applicant=
+{
+  "applicantid":0,
+  "applicant_name": '',
+  "applicant_occupation": '',
+  "applicant_pancard": '',
+  "applicant_email": '',
+  "cibil": {
+    "cibilId": 0,
+    "cibilScoreDateTime": '',
+    "cibilStatus": '',
+    "cibilRemark": '',
+    "cibilScore": 0
+  }
+}
+c:Cibil={
+  cibilId: 0,
+  cibilScoreDateTime: '',
+  cibilStatus: '',
+  cibilRemark: '',
+  cibilScore: 0
+}
+
+>>>>>>> 575d390c195f3abd316cd0467b1634ea256dbfa7
 
   savedocument(d){
     return this.http.post(this.url,d)
   }
 
-img:string="/assets/img/pass_size.jpg";
+img:string="/assets/img/raju.jpg";
 
 setimage(image :string)
 {
 this.img=image;
 }
+
+
+
 
 saveEmpData(e){
   return this.http.post(this.postEmpurl,e)
@@ -175,6 +213,7 @@ updateEmpData(e:employee){
   return this.http.put(this.UpdateEmpurl+e.employeeid,e)
 }
 
+<<<<<<< HEAD
 getApplicantData():Observable<Applicant>{
 
   return this.http.get<Applicant>(this.getApplicanturl)
@@ -196,5 +235,12 @@ saveCustomerData(){
 }
 
 
+=======
+
+saveApplicant(a:Applicant)
+{
+return this.http.post(this.suapplicanturl,a)
+}
+>>>>>>> 575d390c195f3abd316cd0467b1634ea256dbfa7
 }
 

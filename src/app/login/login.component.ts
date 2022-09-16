@@ -22,6 +22,10 @@ export class LoginComponent implements OnInit {
 
   image:string="/assets/img/mike.jpg"
   imagecm:string="/assets/img/agri1.jpg"
+  image1:string="/assets/img/raju.jpg"
+
+
+  
   constructor(private router: Router, public cs : CommonService) {}
   username: string='';
   password:string='';
@@ -53,8 +57,9 @@ export class LoginComponent implements OnInit {
       sessionStorage.setItem('role', 'cr');
       this.router.navigateByUrl("role/cr/credit");
     }
-    if (u.username === 're' && u.password === 're') {
+    if (u.username === 'se' && u.password === 'se') {
       console.log(u.username,u.password);
+      this.cs.setimage(this.image1)
       sessionStorage.setItem('role', 'selsexcutive');
       this.router.navigateByUrl("role/selsexcutive/all-app-list");
     }
