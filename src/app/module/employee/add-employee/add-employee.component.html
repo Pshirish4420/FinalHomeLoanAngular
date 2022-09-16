@@ -1,34 +1,71 @@
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<!------ Include the above in your HEAD tag ---------->
 
-<div class="container">
-    <div class="row">
-    
+<div class="container register">
+                <div class="row">
+                    <div class="col-md-3 register-left" align="center">
+                        <img src="https://image.ibb.co/n7oTvU/logo_white.png" alt=""/>
+                        <h1 style="color: black;">Welcome</h1>
+                        <!--  <input type="submit" name="" value="Login"/><br/> -->
+                    </div>
+                    <div class="col-md-9 register-right">
+                        <!-- <ul class="nav nav-tabs nav-justified" id="myTab" role="tablist"> -->
+                            <li class="nav-item" align="right">
+                                <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Employee</a>
+                                       <!-- <p>You are 30 seconds away from earning your own money!</p> -->
+                          </li>
+                       
+                        
+                        <div class="tab-content" id="myTabContent">
+                            <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                                <h3 class="register-heading">Register new Employee</h3>
+                                <div class="row register-form">
+                                    <div class="col-md-6">
+                                       
+                                        <form [formGroup]="empform"(ngSubmit)="saveEmployee(e)">
+                                           
+                                            <div class="form-group ">
+                                             <input type="text"  placeholder="Enter Employee Name"  formControlName="employeename">
+                                            </div>
 
-    <form [formGroup]="empform"(ngSubmit)="saveEmployee()">
-        <!-- <input type="text" class="form-control"  placeholder="Enter  name" formControlName="productId" > -->
-          <input type="text"  placeholder="Enter  name" formControlName="employeename">
-      <div class="form-group ">
-          <input type="text"  placeholder="Enter employeeusername"  formControlName="employeeusername">
-      </div>
-    
-       
-    <div class="form-group ">
-        <input type="text"   placeholder="Enter employeepassword"  formControlName="employeepassword">
-    </div>
 
-    
-     
-      <input type="text"  placeholder="Enter  employeedesignation" formControlName="employeedesignation">
-      <div class="form-group ">
-          <input type="text"   placeholder="Enter employeemobile"  formControlName="employeemobile">
-      </div>
-    
-       
-    <div class="form-group ">
-        <input type="text"  placeholder="Enter employeeemailid"  formControlName="employeeemailid">
-    </div>
+                                            <div class="form-group ">
+                                                <input type="text"  placeholder="Enter User"  formControlName="employeename">
+                                               </div>
 
-    
-      <div class="form-group"> 
-          <button class="btn btn-success btn-lg btn-block" type="submit">Submit</button>
-      </div>
-    </form>
+
+                                      
+                                            <div class="form-group ">
+                                        
+                                             <input type="text"   placeholder="Enter PASSWORD"  formControlName="employeepassword">
+                                        
+                                            </div>
+                                        
+                                            <div class="form-group ">
+                                        
+                                            <input type="text"  placeholder="Enter  DESIGNATION" formControlName="employeedesignation">
+                                            
+                                        </div>
+                                   
+                                        <div class="form-group ">
+                                        
+                                            <input type="text"   placeholder="Enter MOBILE NO"  formControlName="employeemobile">
+                                        
+                                        </div>
+                                   
+                                        <div class="form-group ">
+                                        
+                                          <input type="text"  placeholder="Enter  EMAIL-ID"  formControlName="employeeemailid">
+                                        
+                                        </div>
+                                  
+                                   
+                                        <div class="form-group"> 
+                                        
+                                            <button class="btn btn-success btn-lg btn-block" type="submit">Submit</button>
+                                        
+                                        </div>
+                                    
+                                   

@@ -219,7 +219,9 @@
     &.navbar-transparent{
       background-color: $transparent-bg !important;
       box-shadow: none;
-      border-bottom: 1px solid #ddd;
+      border-bottom: 1px solid rgb(243, 122, 122);
+    
+      
 
       a:not(.dropdown-item):not(.btn){
         color: $default-color;
