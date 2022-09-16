@@ -1,0 +1,34 @@
+
+<div class="container">
+    <div class="row">
+    
+
+    <form [formGroup]="empform"(ngSubmit)="saveEmployee()">
+        <!-- <input type="text" class="form-control"  placeholder="Enter  name" formControlName="productId" > -->
+          <input type="text"  placeholder="Enter  name" formControlName="employeename">
+      <div class="form-group ">
+          <input type="text"  placeholder="Enter employeeusername"  formControlName="employeeusername">
+      </div>
+    
+       
+    <div class="form-group ">
+        <input type="text"   placeholder="Enter employeepassword"  formControlName="employeepassword">
+    </div>
+
+    
+     
+      <input type="text"  placeholder="Enter  employeedesignation" formControlName="employeedesignation">
+      <div class="form-group ">
+          <input type="text"   placeholder="Enter employeemobile"  formControlName="employeemobile">
+      </div>
+    
+       
+    <div class="form-group ">
+        <input type="text"  placeholder="Enter employeeemailid"  formControlName="employeeemailid">
+    </div>
+
+    
+      <div class="form-group"> 
+          <button class="btn btn-success btn-lg btn-block" type="submit">Submit</button>
+      </div>
+    </form>
