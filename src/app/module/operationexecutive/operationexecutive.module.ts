@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 
 import { RouterModule, Routes } from '@angular/router';
 import { AllApprovedListComponent } from './all-approved-list/all-approved-list.component';
+import { FormsModule } from '@angular/forms';
 
 const oerouting: Routes = [
   
@@ -12,7 +13,7 @@ const oerouting: Routes = [
 @NgModule({
   declarations: [ AllApprovedListComponent],
   imports: [
-    CommonModule,RouterModule.forChild(oerouting)
+    CommonModule,RouterModule.forChild(oerouting),FormsModule 
   ]
 })
 export class OperationexecutiveModule { }

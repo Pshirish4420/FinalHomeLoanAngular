@@ -4,6 +4,7 @@ import { AllApplicationListComponent } from './all-application-list/all-applicat
 import { AllApprovedListComponent } from './all-approved-list/all-approved-list.component';
 import { EnquiryFormComponent } from './enquiry-form/enquiry-form.component';
 import { RouterModule, Routes } from '@angular/router';
+import { FormsModule } from '@angular/forms';
 
 const serouting: Routes = [
   {path:'all-app-list',component:AllApplicationListComponent  },
@@ -22,7 +23,7 @@ const serouting: Routes = [
 @NgModule({
   declarations: [AllApplicationListComponent, AllApprovedListComponent, EnquiryFormComponent],
   imports: [
-    CommonModule,RouterModule.forChild(serouting)
+    CommonModule,RouterModule.forChild(serouting),FormsModule
   ]
 })
 export class SalsesexecutiveModule { }
